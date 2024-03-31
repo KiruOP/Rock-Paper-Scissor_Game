@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(46, 207, 148);
+}
+
+.heading-container{
+    height: 5rem;
+    width: 100vw;
+    background-color: rgb(17, 15, 15);
+    color: azure;
+    font-size: 2rem;
+    line-height: 5rem;
+    text-align: center;
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 100vw;
+    gap: 2rem;
+    margin-top: 5px;
+}
+
+.scorebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 5rem;
+    width: 7.5rem;
+    background-color: rgb(17, 15, 15);
+    color: azure;
+    border-radius: 1rem;
+
+}
+
+.score{
+    font-size: 2.3rem;
+}
+
+.result{
+    padding: 1rem 5rem;
+    border: 3px solid rgb(17, 15, 15);
+    border-radius: 1rem;
+    margin: 0.5rem 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: azure;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16rem;
+    width: 100vw;
+    gap: 3rem;
+}
+
+.choice{
+    height: 80%;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+
+}
+
+img{
+    height: 97%;
+    width: 97%;
+    border-radius: 50%;
+}
+.choice:hover{
+    /* background-color: red; */
+    /* scale: 120%; */
+    animation: scale-up 1.5s ease-in infinite;
+}
+@keyframes scale-up {
+    0% {
+        scale: 100%;
+    }
+    50% {
+        scale: 110%;
+    }
+    100% {
+        scale: 100%;
+    }
+}
+
+.new-btn{
+    margin-top: 2rem;
+    background-color: rgb(17, 15, 15);
+    color: azure;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1.8px solid transparent;
+}
+.new-btn:hover{
+    border: 1.8px solid azure;
+}
+
+.prevent-select {
+    user-select: none; 
+}
